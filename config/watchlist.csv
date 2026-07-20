@@ -1,0 +1,91 @@
+company,segment,region,ats,slug_or_tenant,endpoint,status,total_open_jobs
+KRAFTON India,Startup,India,greenhouse,kraftonindia,https://boards-api.greenhouse.io/v1/boards/kraftonindia/jobs,LIVE,12
+Postman,Startup,India,greenhouse,postman,https://boards-api.greenhouse.io/v1/boards/postman/jobs,LIVE,113
+BrowserStack,Startup,India,greenhouse,browserstack,https://boards-api.greenhouse.io/v1/boards/browserstack/jobs,DEAD,
+Chargebee,Startup,India,greenhouse,chargebee,https://boards-api.greenhouse.io/v1/boards/chargebee/jobs,DEAD,
+Innovaccer,Startup,India,greenhouse,innovaccer,https://boards-api.greenhouse.io/v1/boards/innovaccer/jobs,DEAD,
+HackerRank,Startup,India,greenhouse,hackerrank,https://boards-api.greenhouse.io/v1/boards/hackerrank/jobs,LIVE,33
+Zenoti,Startup,India,greenhouse,zenoti,https://boards-api.greenhouse.io/v1/boards/zenoti/jobs,LIVE,45
+CleverTap,Startup,India,greenhouse,clevertap,https://boards-api.greenhouse.io/v1/boards/clevertap/jobs,DEAD,
+Capillary,Startup,India,greenhouse,capillarytech,https://boards-api.greenhouse.io/v1/boards/capillarytech/jobs,DEAD,
+Atlan,Startup,India,greenhouse,atlan,https://boards-api.greenhouse.io/v1/boards/atlan/jobs,DEAD,
+Hasura,Startup,India,greenhouse,hasura,https://boards-api.greenhouse.io/v1/boards/hasura/jobs,DEAD,
+Sprinto,Startup,India,greenhouse,sprinto,https://boards-api.greenhouse.io/v1/boards/sprinto/jobs,DEAD,
+Whatfix,Startup,India,greenhouse,whatfix,https://boards-api.greenhouse.io/v1/boards/whatfix/jobs,DEAD,
+Zepto,Startup,India,greenhouse,zeptonow,https://boards-api.greenhouse.io/v1/boards/zeptonow/jobs,DEAD,
+CRED,Startup,India,greenhouse,cred,https://boards-api.greenhouse.io/v1/boards/cred/jobs,DEAD,
+Groww,Startup,India,greenhouse,groww,https://boards-api.greenhouse.io/v1/boards/groww/jobs,LIVE,12
+Meesho,Startup,India,greenhouse,meesho,https://boards-api.greenhouse.io/v1/boards/meesho/jobs,DEAD,
+Rapido,Startup,India,greenhouse,rapido,https://boards-api.greenhouse.io/v1/boards/rapido/jobs,DEAD,
+Jupiter,Startup,India,greenhouse,jupitermoney,https://boards-api.greenhouse.io/v1/boards/jupitermoney/jobs,DEAD,
+Slice,Startup,India,greenhouse,sliceit,https://boards-api.greenhouse.io/v1/boards/sliceit/jobs,DEAD,
+Paytm,Listed,India,lever,paytm,https://api.lever.co/v0/postings/paytm?mode=json,LIVE,234
+HighLevel,Startup,India-Remote,lever,gohighlevel,https://api.lever.co/v0/postings/gohighlevel?mode=json,LIVE,89
+Unacademy,Startup,India,lever,unacademy,https://api.lever.co/v0/postings/unacademy?mode=json,DEAD,
+Spinny,Startup,India,lever,spinny,https://api.lever.co/v0/postings/spinny?mode=json,DEAD,
+Khatabook,Startup,India,lever,khatabook,https://api.lever.co/v0/postings/khatabook?mode=json,DEAD,
+Dream11/Sporta,Startup,India,lever,dream11,https://api.lever.co/v0/postings/dream11?mode=json,DEAD,
+Acko,Startup,India,lever,acko,https://api.lever.co/v0/postings/acko?mode=json,DEAD,
+Upstox,Startup,India,lever,upstox,https://api.lever.co/v0/postings/upstox?mode=json,DEAD,
+Zoomcar,Startup,India,lever,zoomcar,https://api.lever.co/v0/postings/zoomcar?mode=json,DEAD,
+Netomi,Startup,India,lever,netomi,https://api.lever.co/v0/postings/netomi?mode=json,LIVE,27
+Observe.AI,Startup,India,lever,observeai,https://api.lever.co/v0/postings/observeai?mode=json,DEAD,
+Zluri,Startup,India,lever,zluri,https://api.lever.co/v0/postings/zluri?mode=json,DEAD,
+Zepto,Startup,India,ashby,zepto,https://api.ashbyhq.com/posting-api/job-board/zepto,DEAD,
+Navi,Startup,India,ashby,navi,https://api.ashbyhq.com/posting-api/job-board/navi,LIVE,7
+Smallcase,Startup,India,ashby,smallcase,https://api.ashbyhq.com/posting-api/job-board/smallcase,DEAD,
+Dezerv,Startup,India,ashby,dezerv,https://api.ashbyhq.com/posting-api/job-board/dezerv,DEAD,
+Stable Money,Startup,India,ashby,stablemoney,https://api.ashbyhq.com/posting-api/job-board/stablemoney,DEAD,
+Jar,Startup,India,ashby,jar,https://api.ashbyhq.com/posting-api/job-board/jar,DEAD,
+Careem,Startup,Gulf,greenhouse,careem,https://boards-api.greenhouse.io/v1/boards/careem/jobs,LIVE,28
+Tamara,Startup,Gulf,greenhouse,tamara,https://boards-api.greenhouse.io/v1/boards/tamara/jobs,LIVE,41
+Tabby,Startup,Gulf,greenhouse,tabby,https://boards-api.greenhouse.io/v1/boards/tabby/jobs,DEAD,
+talabat,Startup,Gulf,greenhouse,talabat,https://boards-api.greenhouse.io/v1/boards/talabat/jobs,DEAD,
+noon,Startup,Gulf,greenhouse,noon,https://boards-api.greenhouse.io/v1/boards/noon/jobs,DEAD,
+Kitopi,Startup,Gulf,greenhouse,kitopi,https://boards-api.greenhouse.io/v1/boards/kitopi/jobs,DEAD,
+Property Finder,Startup,Gulf,greenhouse,propertyfinder,https://boards-api.greenhouse.io/v1/boards/propertyfinder/jobs,DEAD,
+Dubizzle Group,Startup,Gulf,greenhouse,dubizzlegroup,https://boards-api.greenhouse.io/v1/boards/dubizzlegroup/jobs,DEAD,
+G42,Non-listed,Gulf,greenhouse,g42,https://boards-api.greenhouse.io/v1/boards/g42/jobs,DEAD,
+Presight,Listed,Gulf,greenhouse,presight,https://boards-api.greenhouse.io/v1/boards/presight/jobs,DEAD,
+Wio Bank,Non-listed,Gulf,greenhouse,wio,https://boards-api.greenhouse.io/v1/boards/wio/jobs,DEAD,
+Huspy,Startup,Gulf,greenhouse,huspy,https://boards-api.greenhouse.io/v1/boards/huspy/jobs,DEAD,
+Sarwa,Startup,Gulf,greenhouse,sarwa,https://boards-api.greenhouse.io/v1/boards/sarwa/jobs,DEAD,
+Insider,Startup,Gulf,greenhouse,insider,https://boards-api.greenhouse.io/v1/boards/insider/jobs,LIVE,17
+Bitpanda,Startup,Gulf,greenhouse,bitpanda,https://boards-api.greenhouse.io/v1/boards/bitpanda/jobs,LIVE,51
+Bayzat,Startup,Gulf,lever,bayzat,https://api.lever.co/v0/postings/bayzat?mode=json,DEAD,
+Tarabut,Startup,Gulf,lever,tarabut,https://api.lever.co/v0/postings/tarabut?mode=json,DEAD,
+Lean Technologies,Startup,Gulf,lever,lean,https://api.lever.co/v0/postings/lean?mode=json,DEAD,
+Alaan,Startup,Gulf,lever,alaan,https://api.lever.co/v0/postings/alaan?mode=json,DEAD,
+Pemo,Startup,Gulf,lever,pemo,https://api.lever.co/v0/postings/pemo?mode=json,DEAD,
+Qashio,Startup,Gulf,lever,qashio,https://api.lever.co/v0/postings/qashio?mode=json,DEAD,
+Ziina,Startup,Gulf,ashby,ziina,https://api.ashbyhq.com/posting-api/job-board/ziina,LIVE,15
+Tamara,Startup,Gulf,ashby,tamara,https://api.ashbyhq.com/posting-api/job-board/tamara,DEAD,
+Kitopi,Startup,Gulf,workable,kitopi,https://apply.workable.com/api/v1/widget/accounts/kitopi?details=false,LIVE,0
+Swvl,Startup,Gulf,workable,swvl,https://apply.workable.com/api/v1/widget/accounts/swvl?details=false,LIVE,0
+Huspy,Startup,Gulf,workable,huspy,https://apply.workable.com/api/v1/widget/accounts/huspy?details=false,LIVE,0
+Bayzat,Startup,Gulf,workable,bayzat,https://apply.workable.com/api/v1/widget/accounts/bayzat?details=false,LIVE,0
+Dubizzle,Startup,Gulf,workable,dubizzle,https://apply.workable.com/api/v1/widget/accounts/dubizzle?details=false,LIVE,0
+Zbooni,Startup,Gulf,workable,zbooni,https://apply.workable.com/api/v1/widget/accounts/zbooni?details=false,DEAD,
+Wego,Startup,Gulf,workable,wego,https://apply.workable.com/api/v1/widget/accounts/wego?details=false,LIVE,0
+talabat,Startup,Gulf,smartrecruiters,Talabat,https://api.smartrecruiters.com/v1/companies/Talabat/postings?limit=1,LIVE,0
+Delivery Hero,Listed,Gulf,smartrecruiters,DeliveryHero,https://api.smartrecruiters.com/v1/companies/DeliveryHero/postings?limit=1,LIVE,1068
+Deloitte,Big4,Global,smartrecruiters,Deloitte,https://api.smartrecruiters.com/v1/companies/Deloitte/postings?limit=1,LIVE,0
+Visa,Listed,Global,smartrecruiters,Visa,https://api.smartrecruiters.com/v1/companies/Visa/postings?limit=1,LIVE,2
+PwC Global,Big4,Global,workday,pwc|wd3,https://pwc.wd3.myworkdayjobs.com/,DEAD,
+Kearney,Consulting,Global,workday,kearney|wd1,https://kearney.wd1.myworkdayjobs.com/,DEAD,
+DP World,Listed,Gulf,workday,dpworld|wd3,https://dpworld.wd3.myworkdayjobs.com/,DEAD,
+Emirates NBD,Listed,Gulf,workday,emiratesnbd|wd3,https://emiratesnbd.wd3.myworkdayjobs.com/,DEAD,
+Chalhoub Group,Non-listed,Gulf,workday,chalhoub|wd3,https://chalhoub.wd3.myworkdayjobs.com/,DEAD,
+Majid Al Futtaim,Non-listed,Gulf,workday,majidalfuttaim|wd3,https://majidalfuttaim.wd3.myworkdayjobs.com/,DEAD,
+ADNOC,Listed,Gulf,workday,adnoc|wd3,https://adnoc.wd3.myworkdayjobs.com/,DEAD,
+Alshaya,Non-listed,Gulf,workday,alshaya|wd3,https://alshaya.wd3.myworkdayjobs.com/,DEAD,
+Emaar,Listed,Gulf,workday,emaar|wd3,https://emaar.wd3.myworkdayjobs.com/,DEAD,
+Mubadala,Sovereign,Gulf,workday,mubadala|wd3,https://mubadala.wd3.myworkdayjobs.com/,DEAD,
+ADQ,Sovereign,Gulf,workday,adq|wd3,https://adq.wd3.myworkdayjobs.com/,DEAD,
+e& (Etisalat),Listed,Gulf,workday,etisalat|wd3,https://etisalat.wd3.myworkdayjobs.com/,DEAD,
+stc,Listed,Gulf,workday,stc|wd3,https://stc.wd3.myworkdayjobs.com/,DEAD,
+Agthia,Listed,Gulf,workday,agthia|wd3,https://agthia.wd3.myworkdayjobs.com/,DEAD,
+Aldar,Listed,Gulf,workday,aldar|wd3,https://aldar.wd3.myworkdayjobs.com/,DEAD,
+KPMG Lower Gulf,Big4,Gulf,workday,kpmglowergulf|wd3,https://kpmglowergulf.wd3.myworkdayjobs.com/,DEAD,
+EY Global,Big4,Global,workday,ey|wd3,https://ey.wd3.myworkdayjobs.com/,DEAD,
+Deloitte ME,Big4,Gulf,workday,deloitteme|wd3,https://deloitteme.wd3.myworkdayjobs.com/,DEAD,

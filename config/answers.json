@@ -1,0 +1,23 @@
+{
+  "candidate_name": "Ranvijay Singh",
+  "email": "ranvijay0401@gmail.com",
+  "phone": "+91 879 580 8100",
+  "linkedin": "https://www.linkedin.com/in/ranvijays243",
+  "website": "https://www.ranvijaysingh.in",
+  "notice_period": "3 months, negotiable",
+  "current_ctc_inr": "41 LPA",
+  "expected_ctc_inr": "Open to discussion based on role scope",
+  "expected_package_gulf": "0",
+  "work_authorization": {
+    "india": "Fully authorized",
+    "gulf": "Requires visa sponsorship"
+  },
+  "relocation": "Yes, including Dubai/Gulf",
+  "earliest_joining": "60 days (range 30-90)",
+  "preferred_locations": ["Delhi NCR", "Noida", "Gurugram", "Bengaluru", "Dubai", "Abu Dhabi", "Riyadh", "Remote-India"],
+  "excluded_locations": ["Mumbai", "Navi Mumbai"],
+  "cv_files": {
+    "corpdev_ma": "cvs/Ranvijay_Singh_Resume_M&A.pdf",
+    "chief_of_staff": "cvs/Ranvijay_Singh_Chief of Staff.pdf"
+  }
+}

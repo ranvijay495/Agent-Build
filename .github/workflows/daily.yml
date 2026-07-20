@@ -1,0 +1,35 @@
+name: Daily job sweep
+on:
+  schedule:
+    - cron: "0 1 * * *"   # 1:00 UTC = 6:30 AM IST daily
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run agent
+        env:
+          PROVIDER: ${{ vars.PROVIDER }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ vars.AWS_REGION }}
+          BEDROCK_MODEL_ID: ${{ vars.BEDROCK_MODEL_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python main.py
+      - name: Save database back to repo
+        run: |
+          git config user.name "job-agent"
+          git config user.email "agent@users.noreply.github.com"
+          git add jobs.db
+          git diff --cached --quiet || git commit -m "Update job database [skip ci]"
+          git push

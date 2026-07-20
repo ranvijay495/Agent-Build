@@ -1,5 +1,5 @@
-"""Daily entrypoint: discover -> dedupe -> score -> notify. Run on Railway cron (once daily)."""
-import json
+"""Daily entrypoint: discover (boards + Oracle + Workday + LinkedIn emails) -> dedupe -> score -> notify."""
+import json, os
 import db, discovery, score, notify
 
 THRESHOLD = 65
@@ -7,6 +7,9 @@ THRESHOLD = 65
 def run():
     c = db.conn()
     found = discovery.poll_all()
+    if os.environ.get("GMAIL_REFRESH_TOKEN"):
+        import gmail_parser
+        found += gmail_parser.poll_linkedin()
     new_jobs = [j for j in found if db.upsert_new(c, j)]
     queued = 0
     for job in new_jobs:

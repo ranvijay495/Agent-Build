@@ -1,4 +1,4 @@
-"""Telegram notifications: cards with a working Open-posting button, digest, and dashboard file."""
+"""Telegram: cards with working Approve / Switch CV / Skip buttons, digest, dashboard file."""
 import json, os, urllib.request
 
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
@@ -23,14 +23,21 @@ def send_card(jid, job, verdict):
             f"Why: {verdict['why']}\n"
             f"Flags: {', '.join(verdict.get('red_flags') or ['none'])}\n\n"
             f"Cover letter:\n{verdict['cover_letter']}")
-    payload = {"chat_id": CHAT_ID, "text": text[:4000]}
+    kb = []
     if job.get("url"):
-        payload["reply_markup"] = {"inline_keyboard": [[{"text": "Open posting", "url": job["url"]}]]}
-    _post("sendMessage", payload)
+        kb.append([{"text": "Open posting", "url": job["url"]}])
+    kb.append([{"text": "Approve", "callback_data": f"approve:{jid}"},
+               {"text": "Switch CV", "callback_data": f"cvswap:{jid}"},
+               {"text": "Skip", "callback_data": f"skip:{jid}"}])
+    _post("sendMessage", {"chat_id": CHAT_ID, "text": text[:4000],
+                          "reply_markup": {"inline_keyboard": kb}})
 
 def send_digest(n_new, n_queued):
     _post("sendMessage", {"chat_id": CHAT_ID,
-        "text": f"Job sweep done: {n_new} new roles, {n_queued} worth your review. Dashboard attached next."})
+        "text": f"Job sweep done: {n_new} new roles, {n_queued} for your review. Dashboard attached next."})
+
+def send_message(text):
+    _post("sendMessage", {"chat_id": CHAT_ID, "text": text})
 
 def send_document(path, caption=""):
     import uuid

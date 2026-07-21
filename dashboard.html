@@ -1,17 +1,54 @@
 <!DOCTYPE html><html><head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta name='viewport' content='width=device-width,initial-scale=1'><meta name='robots' content='noindex'>
 <title>Job Pipeline</title><style>
-body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#f4f5f7;margin:0;padding:16px;color:#1f2937}
-h1{font-size:20px;margin:0 0 2px} .sub{color:#6b7280;font-size:13px;margin-bottom:16px}
-h2{font-size:15px;margin:22px 0 10px;text-transform:capitalize}
-.kpis{display:flex;gap:10px;flex-wrap:wrap}
-.kpi{background:#fff;border-radius:10px;padding:10px 16px;box-shadow:0 1px 3px rgba(0,0,0,.08);min-width:70px;text-align:center}
-.kpi .n{font-size:22px;font-weight:700} .kpi .l{font-size:11px;color:#6b7280;text-transform:capitalize}
-.grid{display:grid;gap:10px}
-.card{background:#fff;border-radius:10px;padding:12px 14px;box-shadow:0 1px 3px rgba(0,0,0,.08);text-decoration:none;color:inherit;display:block}
-.card .t{font-weight:600;font-size:14px} .card .m{color:#374151;font-size:13px;margin:2px 0 6px}
-.card .b{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:#6b7280;align-items:center}
-.pill{background:#eef2ff;color:#4338ca;border-radius:5px;padding:1px 7px;font-weight:600}
+body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#fff;color:#1f2937;margin:0;padding:16px}
+h1{font-size:18px;margin:0} .sub{color:#6b7280;font-size:13px;margin:2px 0 14px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+input,select{padding:7px 10px;border:1px solid #d1d5db;border-radius:7px;font-size:13px}
+input{flex:1;min-width:170px}
+.kpis{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:#6b7280;margin-bottom:10px}
+.kpis b{color:#111827;font-weight:600}
+.wrap{border:1px solid #e5e7eb;border-radius:9px;overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+th{cursor:pointer;text-align:left;padding:9px 10px;font-weight:600;color:#6b7280;border-bottom:1px solid #e5e7eb;white-space:nowrap;background:#f9fafb;position:sticky;top:0}
+td{padding:7px 10px;border-bottom:1px solid #f3f4f6;vertical-align:top}
+tr:nth-child(even){background:#fafafa}
+.pill{background:#eef2ff;color:#4338ca;border-radius:5px;padding:1px 7px;font-size:12px;white-space:nowrap}
+.st{border-radius:10px;padding:2px 9px;font-size:12px;white-space:nowrap}
+.st.queued{background:#dcfce7;color:#15803d}.st.approved{background:#e0e7ff;color:#4338ca}
+.st.applied{background:#dbeafe;color:#1d4ed8}.st.manual{background:#fef3c7;color:#b45309}
+.st.skipped{background:#f3f4f6;color:#9ca3af}.st.new,.st.scored{background:#e0f2fe;color:#0369a1}
+.st.interview{background:#ede9fe;color:#6d28d9}.st.rejected{background:#fee2e2;color:#b91c1c}
+a{color:#2563eb;text-decoration:none;font-weight:600}
 </style></head><body>
-<h1>Job Pipeline</h1><div class='sub'>Last sweep: 20 Jul 2026, 06:33 UTC · 10 roles tracked · tap any card to open the posting</div>
-<div class='kpis'><div class='kpi' style='border-top:3px solid #0891b2'><div class='n'>10</div><div class='l'>new</div></div></div><h2 style='color:#0891b2'>New (10)</h2><div class='grid'><a class='card' href='https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Bengaluru-Millenia/IN-Senior-Associate-Lending---NBFI-GCC-Advisory-Bangalore_743053WD-1' target='_blank'><div class='t'>IN_Senior Associate_Strategy, Technology & AI Enablement_GCC_Advisory_Bangalore</div><div class='m'>PwC · Bengaluru Millenia</div><div class='b'><span class='pill'>Workday</span><span>2026-07-20</span><span></span><span></span></div></a><a class='card' href='https://fa-ewzx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/12235' target='_blank'><div class='t'>Manager – Business Planning & Development</div><div class='m'>AD Ports Group · Abu Dhabi, United Arab Emirates</div><div class='b'><span class='pill'>Oracle</span><span>2026-07-16</span><span></span><span></span></div></a><a class='card' href='https://fa-ewzx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/12122' target='_blank'><div class='t'>Manager - Strategy and Performance</div><div class='m'>AD Ports Group · Abu Dhabi, United Arab Emirates</div><div class='b'><span class='pill'>Oracle</span><span>2026-07-07</span><span></span><span></span></div></a><a class='card' href='https://fa-ewzx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/12129' target='_blank'><div class='t'>Manager - Digital Strategy</div><div class='m'>AD Ports Group · Abu Dhabi, United Arab Emirates</div><div class='b'><span class='pill'>Oracle</span><span>2026-06-29</span><span></span><span></span></div></a><a class='card' href='https://job-boards.greenhouse.io/kraftonindia/jobs/8583335002' target='_blank'><div class='t'>Finance & Strategy Manager</div><div class='m'>KRAFTON India · Bengaluru</div><div class='b'><span class='pill'>Greenhouse</span><span>2026-06-25</span><span></span><span></span></div></a><a class='card' href='https://ehjd.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1811' target='_blank'><div class='t'>ED, Market Insights & Strategy</div><div class='m'>FAB · Abu Dhabi, United Arab Emirates</div><div class='b'><span class='pill'>Oracle</span><span>2026-06-25</span><span></span><span></span></div></a><a class='card' href='https://jobs.ashbyhq.com/ziina/964ef2c0-0bce-4d28-b190-f6e02e279981' target='_blank'><div class='t'>Operations & Strategy Manager</div><div class='m'>Ziina · Dubai</div><div class='b'><span class='pill'>Ashby</span><span>2026-06-19</span><span></span><span></span></div></a><a class='card' href='https://jobs.lever.co/gohighlevel/d08363ec-acf3-4610-b13f-e70c9054ea98' target='_blank'><div class='t'>Associate Director, Product Strategy & Operations (Revenue)</div><div class='m'>HighLevel · India</div><div class='b'><span class='pill'>Lever</span><span>2026-06-18</span><span></span><span></span></div></a><a class='card' href='https://jobs.lever.co/paytm/ec75c97a-0e6e-4cc5-869e-09deef1d6521' target='_blank'><div class='t'>Sales Excellence(Strategy & Ops) - Paytm - Delhi/NCR</div><div class='m'>Paytm · Greater Noida, Uttar Pradesh</div><div class='b'><span class='pill'>Lever</span><span>2026-06-09</span><span></span><span></span></div></a><a class='card' href='https://jobs.lever.co/paytm/cd206891-4ef7-41cd-8b27-da54b5c21d5c' target='_blank'><div class='t'>Corporate Development-Team Lead</div><div class='m'>Paytm · Noida, Uttar Pradesh</div><div class='b'><span class='pill'>Lever</span><span>2026-06-01</span><span></span><span></span></div></a></div></body></html>
+<h1>Job Pipeline</h1><div class='sub'>Last sweep: 21 Jul 2026, 02:36 UTC · 10 roles · CV switches happen on the Telegram card</div>
+<div class='bar'><input id='q' placeholder='Search role or company' oninput='draw()'/>
+<select id='fp' onchange='draw()'><option value=''>All portals</option></select>
+<select id='fs' onchange='draw()'><option value=''>All statuses</option></select>
+<select id='fr' onchange='draw()'><option value=''>India + Gulf</option><option>India</option><option>Gulf</option></select></div>
+<div class='kpis' id='kpis'></div>
+<div class='wrap'><table><thead><tr id='hdr'></tr></thead><tbody id='tb'></tbody></table></div>
+<script>
+const DATA=[{"d": "2026-07-20", "r": "IN_Senior Associate_Strategy, Technology & AI Enablement_GCC_Advisory_Bangalore", "c": "PwC", "l": "Bengaluru Millenia", "p": "Workday", "s": "", "cv": "", "st": "new", "u": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Bengaluru-Millenia/IN-Senior-Associate-Lending---NBFI-GCC-Advisory-Bangalore_743053WD-1"}, {"d": "2026-07-16", "r": "Manager \u2013 Business Planning & Development", "c": "AD Ports Group", "l": "Abu Dhabi, United Arab Emirates", "p": "Oracle", "s": "", "cv": "", "st": "new", "u": "https://fa-ewzx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/12235"}, {"d": "2026-07-07", "r": "Manager - Strategy and Performance", "c": "AD Ports Group", "l": "Abu Dhabi, United Arab Emirates", "p": "Oracle", "s": "", "cv": "", "st": "new", "u": "https://fa-ewzx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/12122"}, {"d": "2026-06-29", "r": "Manager - Digital Strategy", "c": "AD Ports Group", "l": "Abu Dhabi, United Arab Emirates", "p": "Oracle", "s": "", "cv": "", "st": "new", "u": "https://fa-ewzx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/12129"}, {"d": "2026-06-25", "r": "Finance & Strategy Manager", "c": "KRAFTON India", "l": "Bengaluru", "p": "Greenhouse", "s": "", "cv": "", "st": "new", "u": "https://job-boards.greenhouse.io/kraftonindia/jobs/8583335002"}, {"d": "2026-06-25", "r": "ED, Market Insights & Strategy", "c": "FAB", "l": "Abu Dhabi, United Arab Emirates", "p": "Oracle", "s": "", "cv": "", "st": "new", "u": "https://ehjd.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1811"}, {"d": "2026-06-19", "r": "Operations & Strategy Manager", "c": "Ziina", "l": "Dubai", "p": "Ashby", "s": "", "cv": "", "st": "new", "u": "https://jobs.ashbyhq.com/ziina/964ef2c0-0bce-4d28-b190-f6e02e279981"}, {"d": "2026-06-18", "r": "Associate Director, Product Strategy & Operations (Revenue)", "c": "HighLevel", "l": "India", "p": "Lever", "s": "", "cv": "", "st": "new", "u": "https://jobs.lever.co/gohighlevel/d08363ec-acf3-4610-b13f-e70c9054ea98"}, {"d": "2026-06-09", "r": "Sales Excellence(Strategy & Ops) - Paytm - Delhi/NCR", "c": "Paytm", "l": "Greater Noida, Uttar Pradesh", "p": "Lever", "s": "", "cv": "", "st": "new", "u": "https://jobs.lever.co/paytm/ec75c97a-0e6e-4cc5-869e-09deef1d6521"}, {"d": "2026-06-01", "r": "Corporate Development-Team Lead", "c": "Paytm", "l": "Noida, Uttar Pradesh", "p": "Lever", "s": "", "cv": "", "st": "new", "u": "https://jobs.lever.co/paytm/cd206891-4ef7-41cd-8b27-da54b5c21d5c"}];
+const COLS=[['d','Posted'],['r','Role'],['c','Company'],['l','Location'],['p','Portal'],['s','Score'],['cv','CV'],['st','Status']];
+let sk='d',asc=false;
+const GULF=['uae','united arab emirates','dubai','abu dhabi','saudi','riyadh','doha','qatar','kuwait','bahrain','oman'];
+[...new Set(DATA.map(x=>x.p))].sort().forEach(p=>fp.add(new Option(p)));
+[...new Set(DATA.map(x=>x.st))].sort().forEach(s=>fs.add(new Option(s)));
+function srt(k){asc=(sk===k)?!asc:true;sk=k;draw();}
+function draw(){
+ hdr.innerHTML=COLS.map(([k,n])=>`<th onclick="srt('${k}')">${n}${sk===k?(asc?' ↑':' ↓'):''}</th>`).join('')+'<th></th>';
+ const q=document.getElementById('q').value.toLowerCase(),p=fp.value,s=fs.value,r=fr.value;
+ let rows=DATA.filter(x=>(!q||(x.r+x.c).toLowerCase().includes(q))&&(!p||x.p===p)&&(!s||x.st===s));
+ if(r==='Gulf')rows=rows.filter(x=>GULF.some(g=>x.l.toLowerCase().includes(g)));
+ if(r==='India')rows=rows.filter(x=>!GULF.some(g=>x.l.toLowerCase().includes(g)));
+ rows.sort((a,b)=>{const A=a[sk],B=b[sk];return(A>B?1:A<B?-1:0)*(asc?1:-1);});
+ tb.innerHTML=rows.map(x=>`<tr><td style='white-space:nowrap;color:#6b7280'>${x.d}</td>
+ <td style='font-weight:600'>${x.r}</td><td>${x.c}</td><td style='color:#6b7280'>${x.l}</td>
+ <td><span class='pill'>${x.p}</span></td><td style='font-weight:600'>${x.s}</td><td>${x.cv}</td>
+ <td><span class='st ${x.st}'>${x.st}</span></td><td><a href='${x.u}' target='_blank'>Open</a></td></tr>`).join('');
+ const cnt={};rows.forEach(x=>cnt[x.st]=(cnt[x.st]||0)+1);
+ kpis.innerHTML=`<span><b>${rows.length}</b> shown</span>`+Object.entries(cnt).map(([k,v])=>`<span>${k}: <b>${v}</b></span>`).join('');
+}
+draw();
+</script></body></html>

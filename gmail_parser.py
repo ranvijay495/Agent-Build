@@ -25,6 +25,7 @@ def _plaintext(payload):
     return ""
 
 NOISE = re.compile(r"(actively hiring|school alum|connection|apply with|your job alert|^\W*$)", re.I)
+BADGE = re.compile(r"^(fast growing|actively recruiting|be an early applicant|promoted|easy apply|remote|hybrid|on-site|new|\d+\s+applicants?.*|response rate.*|posted \d+.*)$", re.I)
 
 def poll_linkedin(days=2):
     try:
@@ -49,10 +50,20 @@ def poll_linkedin(days=2):
         ts = int(full.get("internalDate", "0")) // 1000
         import datetime
         ds = datetime.datetime.fromtimestamp(ts, datetime.timezone.utc).strftime("%Y-%m-%d")
-        for mt in re.finditer(r"([^\n]{3,90})\n([^\n]{2,60})\n([^\n]{2,60})\nView job: (https://\S+)", text):
-            title, company, loc, url = (g.strip() for g in mt.groups())
-            if NOISE.search(title) or NOISE.search(company): continue
-            if "mumbai" in loc.lower(): continue
+        for mt in re.finditer(r"((?:[^\n]+\n){2,6}?)View job: (https://\S+)", text):
+            block, url = mt.group(1), mt.group(2)
+            lines = [l.strip() for l in block.split("\n") if l.strip()]
+            lines = [l for l in lines if not (NOISE.search(l) or BADGE.match(l))]
+            if len(lines) < 2: continue
+            lines = lines[-3:]
+            if "\u00b7" in lines[-1]:  # "Company · Location" combined line
+                company, _, loc = (p.strip() for p in lines[-1].partition("\u00b7"))
+                title = lines[-2]
+            elif len(lines) == 3:
+                title, company, loc = lines
+            else:
+                title, company = lines; loc = ""
+            if "mumbai" in f"{title} {company} {loc}".lower(): continue
             key = title + company
             if key in seen: continue
             seen.add(key)

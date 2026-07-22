@@ -6,6 +6,9 @@ THRESHOLD = 65
 
 def run():
     c = db.conn()
+    # TEMP: purge unscored LinkedIn rows garbled by the old parser; they re-import
+    # cleanly from the 2-day email window. Safe to remove once scores are flowing.
+    c.execute("DELETE FROM jobs WHERE portal='LinkedIn' AND score IS NULL"); c.commit()
     found = discovery.poll_all()
     if os.environ.get("GMAIL_REFRESH_TOKEN"):
         import gmail_parser
